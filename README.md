@@ -8,11 +8,11 @@
 
 ```
 $ cd path/to/repository
-$ npm i
+$ yarn
 ```
 
 ## Usage
 
 ```
-$ npm start
+$ yarn run dev
 ```
