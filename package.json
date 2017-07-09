@@ -4,9 +4,7 @@
   "description": "The GamerLink application.",
   "main": "server.js",
   "scripts": {
-    "dev": "concurrently \"yarn run server:watch\" \"yarn run client:watch\"",
-    "server:watch": "NODE_ENV=development && nodemon server/index.js --exec babel-node --watch server",
-    "client:watch": "webpack --watch"
+    "dev": "NODE_ENV=development nodemon server/index.js --exec babel-node --watch server"
   },
   "repository": {
     "type": "git",
@@ -19,7 +17,6 @@
   },
   "homepage": "https://github.com/barberdt/gamerlink#readme",
   "devDependencies": {
-    "concurrently": "^3.5.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
     "eslint-plugin-import": "^2.3.0",
@@ -42,11 +39,14 @@
     "pug": "^2.0.0-rc.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-hot-loader": "next",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1",
     "redux-devtools-extension": "^2.13.2",
     "redux-pack": "^0.1.5",
     "redux-thunk": "^2.2.0",
-    "webpack": "^3.1.0"
+    "webpack": "^3.1.0",
+    "webpack-dev-middleware": "^1.11.0",
+    "webpack-hot-middleware": "^2.18.2"
   }
 }
