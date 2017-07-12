@@ -30,7 +30,7 @@ export default class Test extends React.Component {
   render() {
     return (
       <div>
-        <h1>This is Foobar</h1>
+        <h1>This is Foo</h1>
         <div>{this.props.foo}</div>
         <label htmlFor="foo">Edit Foo</label>
         <input
