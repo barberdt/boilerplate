@@ -25,16 +25,17 @@ export default {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: [
+          { loader: 'babel-loader' },
+          { loader: 'eslint-loader' },
+        ],
       },
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'eslint-loader',
-        },
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
+        ],
       },
     ],
   },
