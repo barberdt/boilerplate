@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { css, withStyles, withStylesPropTypes } from '../styles/withStyles';
 
 const propTypes = {
+  ...withStylesPropTypes,
   foo: PropTypes.string,
   onChangeFooPress: PropTypes.func,
 };
@@ -11,7 +13,7 @@ const defaultProps = {
   onChangeFooPress() {},
 };
 
-export default class Test extends React.Component {
+class Test extends React.Component {
   constructor(props) {
     super(props);
     this.state = { editingFoo: '' };
@@ -28,10 +30,11 @@ export default class Test extends React.Component {
   }
 
   render() {
+    const { styles } = this.props;
     return (
       <div>
-        <h1>This is Foo</h1>
-        <div>{this.props.foo}</div>
+        <h1 {...css(styles.title)}>This is Foo</h1>
+        <div {...css(styles.foo)}>{this.props.foo}</div>
         <label htmlFor="foo">Edit Foo</label>
         <input
           name="foo"
@@ -47,3 +50,12 @@ export default class Test extends React.Component {
 
 Test.propTypes = propTypes;
 Test.defaultProps = defaultProps;
+
+export default withStyles(({ color }) => ({
+  title: {
+    color: color.red,
+  },
+  foo: {
+    color: color.blue,
+  },
+}))(Test);

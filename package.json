@@ -22,9 +22,11 @@
     "eslint-plugin-import": "^2.3.0",
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-react": "^7.0.1",
+    "eslint-plugin-react-with-styles": "^1.1.0",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
+    "aphrodite": "^1.2.1",
     "babel-cli": "^6.24.1",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -41,6 +43,8 @@
     "react-dom": "^15.6.1",
     "react-hot-loader": "next",
     "react-redux": "^5.0.5",
+    "react-with-styles": "^1.4.0",
+    "react-with-styles-interface-aphrodite": "^1.2.0",
     "redux": "^3.7.1",
     "redux-devtools-extension": "^2.13.2",
     "redux-pack": "^0.1.5",

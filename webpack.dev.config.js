@@ -9,7 +9,7 @@ export default {
     'react-hot-loader/patch',
     `webpack-hot-middleware/client?http://localhost:${port}`,
     'webpack/hot/only-dev-server',
-    './client/javascripts/index.js',
+    './client/index.js',
   ],
   output: {
     filename: 'gamerlink.js',
