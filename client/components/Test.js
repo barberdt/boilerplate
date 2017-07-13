@@ -6,11 +6,13 @@ const propTypes = {
   ...withStylesPropTypes,
   foo: PropTypes.string,
   onChangeFooPress: PropTypes.func,
+  title: PropTypes.string,
 };
 
 const defaultProps = {
   foo: null,
   onChangeFooPress() {},
+  title: null,
 };
 
 class Test extends React.Component {
@@ -30,10 +32,10 @@ class Test extends React.Component {
   }
 
   render() {
-    const { styles } = this.props;
+    const { styles, title } = this.props;
     return (
       <div>
-        <h1 {...css(styles.title)}>This is Foo</h1>
+        {title && <h1 {...css(styles.title)}>{title}</h1>}
         <div {...css(styles.foo)}>{this.props.foo}</div>
         <label htmlFor="foo">Edit Foo</label>
         <input
