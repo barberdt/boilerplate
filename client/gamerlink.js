@@ -2,8 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import { Provider } from 'react-redux';
-// eslint-disable-next-line no-unused-vars
-// import normalizeCss from 'normalize.css';
 import { BrowserRouter } from 'react-router-dom';
 import { StyleSheet } from 'aphrodite';
 
