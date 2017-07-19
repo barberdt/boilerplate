@@ -13,8 +13,9 @@ function generateMarkup(html, css, preloadedState) {
     <!doctype html>
     <html>
       <head>
-        <title>GamerLink</title>
-        <link rel="stylesheet" href="/assets/gamerlink.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Boilerplate</title>
+        <link rel="stylesheet" href="/assets/boilerplate.css" />
         <style data-aphrodite>${css.content}</style>
       </head>
       <body>
@@ -23,7 +24,7 @@ function generateMarkup(html, css, preloadedState) {
           window.preloadedState = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')};
           window.renderedClassNames = ${JSON.stringify(css.renderedClassNames)};
         </script>
-        <script src="/assets/gamerlink.js"></script>
+        <script src="/assets/boilerplate.js"></script>
       </body>
     </html>
   `;

@@ -11,18 +11,18 @@ export default {
     `webpack-hot-middleware/client?http://localhost:${port}`,
     'webpack/hot/only-dev-server',
     'whatwg-fetch',
-    './client/styles/gamerlink.css',
+    './client/styles/boilerplate.css',
     './client/index.js',
   ],
   output: {
-    filename: 'gamerlink.js',
+    filename: 'boilerplate.js',
     path: '/',
     publicPath: `http://localhost:${port}/assets/`,
   },
   devtool: 'eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('gamerlink.css'),
+    new ExtractTextPlugin('boilerplate.css'),
   ],
   module: {
     rules: [

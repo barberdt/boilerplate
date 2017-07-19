@@ -1,21 +1,21 @@
 {
-  "name": "gamerlink",
+  "name": "boilderplate",
   "version": "0.0.1",
-  "description": "The GamerLink application.",
+  "description": "Isomorphic JavaScript application boilerplate using Express, React, React Router, Redux, and Aphrodite.",
   "main": "server.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon server/index.js --exec babel-node --watch server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/barberdt/gamerlink.git"
+    "url": "git+https://github.com/barberdt/boilerplate.git"
   },
   "author": "Davis Barber <barberdt@gmail.com> (http://idofrontendthings.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/barberdt/gamerlink/issues"
+    "url": "https://github.com/barberdt/boilerplate/issues"
   },
-  "homepage": "https://github.com/barberdt/gamerlink#readme",
+  "homepage": "https://github.com/barberdt/boilerplate#readme",
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^15.0.1",
