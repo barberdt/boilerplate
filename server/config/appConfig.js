@@ -6,13 +6,11 @@ const baseConfig = {
   rootPath: path.normalize(path.join(`${__dirname}/../..`)),
 };
 
-const env = process.env.NODE_ENV || Environments.DEVELOPMENT;
 const envConfigs = {
-  [Environments.DEVELOPMENT]: {
-    port: 3000,
-    dbUrl: 'mongodb://localhost/gamerlink',
-  },
+  [Environments.DEVELOPMENT]: { port: 3000 },
 };
+
+const env = process.env.NODE_ENV || Environments.DEVELOPMENT;
 
 export default {
   ...baseConfig,
