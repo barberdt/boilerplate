@@ -59,6 +59,26 @@ Note that `normalize.css` is also included and rendered as a traditional `<link>
 
 Along with the use of a polyfill for unsupportive browsers, this boilerplate application makes use of the Fetch API for performing HTTP requests to the server.
 
+### Server
+
+#### HTTP Server/General Framework
+
+[Express](http://expressjs.com/)
+
+Express is a tried and true NodeJS framework for building lightweight HTTP-based applications. It is especially handy for those well versed in JavaScript.
+
+#### View Rendering
+
+This boilerplate application makes use of ReactDOM's built-in support for rendering a given application's React tree to a string. This string can then be templated (using native JavaScript string interpolation) into the base `<html>` and `<body>` of a traditional text/html response. The tools chosen for view routing, application state, and styles (documented above) all have out-of-the-box support for server rendering as well. This architecture lets you truly write your application isomorphically (sharing your JS between client and server).
+
+### Dev/Build Tools
+
+#### Package Management
+
+[Yarn](https://yarnpkg.com/en/)
+
+Yarn is a recent attempt at overthrowing the historically troubled NPM. It attempts to simplify NodeJS package management while significantly increasing its performance. Similar to NPM, Yarn is also used as a build tool through its `yarn run scriptName` API.
+
 #### Bundling/Transpiling
 
 [Webpack](https://webpack.js.org/)
@@ -77,19 +97,7 @@ In addition to using Webpack, Babel is also used to transpile the source code fr
 
 Linting your JavaScript as it is written has become one of the most powerful tools for preventing runtime errors, inconsistent syntax, and extraneous code. ESLint is one of the most popular linting tools and is the one that has been chosen for this application. Be sure to investigate your text editor of choice's support for an ESLint plugin.
 
-### Server
-
-#### HTTP Server/General Framework
-
-[Express](http://expressjs.com/)
-
-Express is a tried and true NodeJS framework for building lightweight HTTP-based applications. It is especially handy for those well versed in JavaScript.
-
-#### View Rendering
-
-This boilerplate application makes use of ReactDOM's built-in support for rendering a given application's React tree to a string. This string can then be templated (using native JavaScript string interpolation) into the base `<html>` and `<body>` of a traditional text/html response. The tools chosen for view routing, application state, and styles (documented above) all have out-of-the-box support for server rendering as well. This architecture lets you truly write your application isomorphically (sharing your JS between client and server).
-
-#### Dev
+#### Running the Application
 
 [Nodemon](https://nodemon.io/)
 
