@@ -1,18 +1,14 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 
-import TestContainer from '../containers/TestContainer';
+import ServerContainer from '../containers/ServerContainer';
 
 export default function App() {
   return (
     <div>
-      <div>
-        <Link to="/test">Test</Link>
-      </div>
-      <div>
-        <Link to="/not">Not Test</Link>
-      </div>
-      <Route path="/test" component={TestContainer} />
+      <Link to="/server">Server</Link>
+      <Link to="/client">Client</Link>
+      <Route path="/server" component={ServerContainer} />
     </div>
   );
 }

@@ -1,2 +1,2 @@
 // eslint-disable-next-line import/prefer-default-export
-export const FOO_CHANGED = 'test/FOO_CHANGED';
+export const LOAD_DATA = 'server/LOAD_DATA';

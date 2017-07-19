@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 
-import testReducer from './testReducer';
+import serverReducer from './serverReducer';
 
 export default combineReducers({
-  test: testReducer,
+  server: serverReducer,
 });
